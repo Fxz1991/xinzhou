@@ -6,6 +6,7 @@ package com.unicom.gitgithub.entity;
  * @date: 2019/5/31 9:29
  * @discription: todo
  */
+
 public class News{
     private Integer id;
     String name;

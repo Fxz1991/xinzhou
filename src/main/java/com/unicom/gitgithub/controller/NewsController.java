@@ -2,8 +2,7 @@ package com.unicom.gitgithub.controller;
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.unicom.gitgithub.entity.News;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +18,7 @@ import java.util.List;
 /*前后端分离开发使用@RestController注解*/
 public class NewsController {
     //localhost:8080/news/getAll
+//    @GetMapping @PostMapping @PutMapping @DeleteMapping
     @RequestMapping(value = "getAll")
     public List<News> getAll(){
         News n1 = new News(1,"aaa");
